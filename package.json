@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npx rollup -c",
-    "postbuild" : "npx del-cli prisma/migrations && npx prisma migrate dev --preview-feature --name Initial --skip-generate --skip-seed",
     "start": "npx serve public",
-    "postinstall": "npx @instantcode/cli build && npx prisma generate",
+    "postinstall": "npx @instantcode/cli build && npx prisma db push && npx prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
