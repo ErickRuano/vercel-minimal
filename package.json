@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx rollup -c",
     "start": "npx serve public",
-    "postinstall": "npx @instantcode/cli build && npx prisma db push && npx prisma generate",
+    "postinstall": "npx @instantcode/cli build && npx prisma db push --preview-feature && npx prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
