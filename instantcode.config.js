@@ -38,6 +38,10 @@ const main = async ()=>{
         "dest" : "./frontend/src/app/components/molecules/Aside.svelte"
       },
       {
+        "src" : "./frontend/.instantcode/files/api.js",
+        "dest" : "./frontend/src/services/client/api.js"
+      },
+      {
         "src" : "./backend/.instantcode/files/service.js",
         "dest" : "./backend/src/services/[id].js",
         "key" : "schema"
@@ -54,6 +58,10 @@ const main = async ()=>{
       {
         "src" : "./backend/.instantcode/files/schema.prisma",
         "dest" : "./prisma/schema.prisma"
+      },
+      {
+        "src" : "./backend/.instantcode/files/auth.js",
+        "dest" : "./backend/src/routes/auth.js"
       }
     ]
   }

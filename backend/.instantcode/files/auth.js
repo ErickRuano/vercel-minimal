@@ -69,11 +69,11 @@ router.get('/github', (req, res, next) => {
 
 router.get(
   '/github/callback',
-  passport.authenticate('github', { failureRedirect: 'http://vercel-minimal.vercel.app' }), (req, res, next) => {
+  passport.authenticate('github', { failureRedirect: '{{vercelProductionURL}}' }), (req, res, next) => {
     const token = jwt.sign({id: req.user.id}, JWT_KEY, {expiresIn: 60 * 60 * 24 * 1000})
     req.logIn(req.user, function(err) {
       if (err) return next(err);
-      res.redirect(`http://vercel-minimal.vercel.app/#/login?token=${token}`)
+      res.redirect(`{{vercelProductionURL}}/#/login?token=${token}`)
     });
         
   },
@@ -91,11 +91,11 @@ router.get('/google', (req, res, next) => {
 
 router.get(
   '/google/callback',
-  passport.authenticate('google', { failureRedirect: 'http://vercel-minimal.vercel.app/#/login' }), (req, res, next) => {
+  passport.authenticate('google', { failureRedirect: '{{vercelProductionURL}}/#/login' }), (req, res, next) => {
     const token = jwt.sign({id: req.user.id}, process.env.JWT_KEY, {expiresIn: 60 * 60 * 24 * 1000})
     req.logIn(req.user, function(err) {
       if (err) return next(err); ;
-      res.redirect(`http://vercel-minimal.vercel.app/#/login?token=${token}`)
+      res.redirect(`{{vercelProductionURL}}/#/login?token=${token}`)
     });
         
   },

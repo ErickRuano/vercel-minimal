@@ -1,14 +1,11 @@
 import axios from 'axios'
 
-const client = axios.create({
-    // baseURL: 'http://localhost:3002/',
-    // timeout: 1000
-})
+const client = axios.create({})
 
 const apiRequest = async (method, url, request, headers)=>{
     return await client({
         method,
-        url : `https://vercel-minimal.vercel.app/api/${url}`,
+        url : `{{vercelProductionURL}}/${url}`,
         data : request,
         headers
     })
