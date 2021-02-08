@@ -33,6 +33,10 @@
                     "id":"other",
                     "type":"String"
                 },
+                 {
+                    "id":"another",
+                    "type":"String"
+                },
                 {
                     "id":"isPublished",
                     "type":"Boolean",
