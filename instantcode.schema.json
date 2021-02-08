@@ -30,6 +30,10 @@
                     "type":"String"
                 },
                 {
+                    "id":"other",
+                    "type":"String"
+                },
+                {
                     "id":"isPublished",
                     "type":"Boolean",
                     "options" : {
