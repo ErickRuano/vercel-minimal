@@ -43,17 +43,17 @@ const main = async ()=>{
       },
       {
         "src" : "./backend/.instantcode/files/service.js",
-        "dest" : "./backend/src/services/[id].js",
+        "dest" : "./backend/services/[id].js",
         "key" : "schema"
       },
       {
         "src" : "./backend/.instantcode/files/route.js",
-        "dest" : "./backend/src/routes/[id].js",
+        "dest" : "./backend/routes/[id].js",
         "key" : "schema"
       },
       {
         "src" : "./backend/.instantcode/files/app.js",
-        "dest" : "./backend/src/app.js"
+        "dest" : "./backend/app.js"
       },
       {
         "src" : "./backend/.instantcode/files/schema.prisma",
@@ -61,7 +61,7 @@ const main = async ()=>{
       },
       {
         "src" : "./backend/.instantcode/files/auth.js",
-        "dest" : "./backend/src/routes/auth.js"
+        "dest" : "./backend/routes/auth.js"
       }
     ]
   }
