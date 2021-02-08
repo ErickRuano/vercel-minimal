@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx rollup -c",
     "start": "npx serve public",
-    "postinstall": "npx @satelite/cli build && npx prisma migrate dev --preview-feature --name Initial --skip-generate --skip-seed && npx prisma generate",
+    "postinstall": "npx @instantcode/cli build && npx prisma migrate dev --preview-feature --name Initial --skip-generate --skip-seed && npx prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

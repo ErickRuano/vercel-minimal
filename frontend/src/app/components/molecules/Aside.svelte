@@ -7,12 +7,14 @@ export let headless;
 
 
 export let links = [
-    {{#each schema}}
     {
-        url : "/{{id}}",
-        display : "{{displayName}}"
-    }{{#if @last}}{{else}},{{/if}}
-    {{/each}}
+        url : "/user",
+        display : "User"
+    },
+    {
+        url : "/app",
+        display : "App"
+    }
 ]
 
 export let style = "";

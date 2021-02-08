@@ -7,6 +7,7 @@ import ButtonComponent from './atoms/Button.svelte'
 import InputComponent from './atoms/Input.svelte'
 import SearchComponent from './atoms/Search.svelte'
 import WebnavComponent from './molecules/Webnav.svelte'
+import MobnavComponent from './molecules/Mobnav.svelte'
 import AsideComponent from './molecules/Aside.svelte'
 import ModalComponent from './molecules/Modal.svelte'
 import TableComponent from './molecules/Table.svelte'
@@ -19,6 +20,7 @@ export default {
     Input : InputComponent,
     Search : SearchComponent,
     Webnav : WebnavComponent,
+    Mobnav : MobnavComponent,
     Aside : AsideComponent,
     Modal : ModalComponent,
     Table : TableComponent
@@ -33,6 +35,7 @@ export const Button = ButtonComponent
 export const Input = InputComponent
 export const Search = SearchComponent
 export const Webnav = WebnavComponent
+export const Mobnav = MobnavComponent
 export const Aside = AsideComponent
 export const Modal = ModalComponent
 export const Table = TableComponent

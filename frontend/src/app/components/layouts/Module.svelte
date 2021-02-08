@@ -16,7 +16,7 @@
 
   nav#mobNav{
     height: auto;
-    background: var(--theme-background);
+    background: var(--theme-primary);
     width:100%;
     grid-area: nav;
     padding:1em 4em 1em 4em;
@@ -152,8 +152,4 @@
     <slot name="main" />
   </main>
 
-  <footer>
-    <slot name="footer"/>
-  </footer>
-  
 </div>

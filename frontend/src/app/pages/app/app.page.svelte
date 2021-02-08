@@ -15,10 +15,6 @@
 	
 	// Fetch 
 	onMount(async ()=>{
-		{{#if isUser}}
-		records = await client.{{id}}.findMany()
-		records = [...records]
-		{{/if}}
 	})
 
 </script>
@@ -49,15 +45,11 @@ section[slot="webnav"]{
 	</section>
 	
 	<section slot="header">
-		{{displayName}}
+		App
 	</section>
 
 	<section slot="main" >
-	{{#if isUser}}
-		Display another partial component for users
-	{{else}}
 		<svelte:component this={DatatablePartial} bind:data={records}></svelte:component>
-	{{/if}}
   	</section>
 
 </Module>
