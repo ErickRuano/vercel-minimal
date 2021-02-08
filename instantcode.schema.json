@@ -33,20 +33,6 @@
                     "id":"other",
                     "type":"String"
                 },
-                 {
-                    "id":"another",
-                    "type":"String",
-                      "options" : {
-                        "default" : "\"default value\""
-                    }
-                },
-                {
-                    "id":"tryingInstantcode",
-                    "type":"String",
-                      "options" : {
-                        "default" : "\"Hello World!\""
-                    }
-                },
                 {
                     "id":"isPublished",
                     "type":"Boolean",
