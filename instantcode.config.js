@@ -39,7 +39,7 @@ const main = async ()=>{
       },
       {
         "src" : "./frontend/.instantcode/files/api.js",
-        "dest" : "./frontend/src/services/client/api.js"
+        "dest" : "./frontend/src/app/services/client/api.js"
       },
       {
         "src" : "./backend/.instantcode/files/service.js",
