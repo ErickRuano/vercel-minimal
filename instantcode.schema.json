@@ -35,7 +35,10 @@
                 },
                  {
                     "id":"another",
-                    "type":"String"
+                    "type":"String",
+                      "options" : {
+                        "default" : "\"default value\""
+                    }
                 },
                 {
                     "id":"isPublished",
