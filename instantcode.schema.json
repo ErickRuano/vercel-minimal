@@ -1,7 +1,7 @@
 {
     "title":"Minimal svelte template",
     "useSQLite" : false,
-    "vercelProductionURL" : "http://vercel-minimal.vercel.app",
+    "vercelProductionURL" : "https://vercel-minimal.vercel.app",
     "schema":[
         {
             "id":"user",
