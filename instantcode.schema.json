@@ -41,6 +41,13 @@
                     }
                 },
                 {
+                    "id":"tryingInstantcode",
+                    "type":"String",
+                      "options" : {
+                        "default" : "\"Hello World!\""
+                    }
+                },
+                {
                     "id":"isPublished",
                     "type":"Boolean",
                     "options" : {
