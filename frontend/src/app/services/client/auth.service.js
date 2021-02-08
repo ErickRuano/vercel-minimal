@@ -13,5 +13,5 @@ export const confirmPassword = async (data, config)=>{
 }
 
 export const self = async (data, config)=>{
-    return await API.get(`auth/self`, config, { authorization : data })
+    return await API.get(`api/auth/self`, config, { authorization : data })
 }
