@@ -40,9 +40,13 @@
     let loading = true;
 
     onMount(async ()=>{
+        {{#if isUser}}
+        loading = false;
+        {{else}}
 		const res  = await client.{{id}}.findMany()
         data = [...res]
         loading = false
+        {{/if}}
 
     })
     
